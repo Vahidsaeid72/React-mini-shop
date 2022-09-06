@@ -1,0 +1,245 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  padding: 0px;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "vazir" !important;
+  box-sizing: border-box !important;
+}
+body {
+  direction: rtl;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(12, 7, 39);
+  display: flex;
+  align-items: center;
+}
+.mybrand p {
+  font-family: "Brush Script MT", cursive !important;
+  font-size: 45px;
+  /* font-weight:bold; */
+  color: rgb(189, 178, 236);
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+footer {
+  height: 8vh;
+  background: rgb(12, 7, 39);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: rgb(189, 178, 236);
+  font-size: 15px;
+}
+/* -------------------------end of header and footer ------------------------- */
+
+/* -------------------------body------------------------- */
+main {
+  padding: 0 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.content .main {
+  width: calc(70% - 20px);
+}
+.content .sidebar {
+  width: calc(30% - 20px);
+}
+/* -------------------------filter------------------------- */
+.content .filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+.content .filter .filter_sort_title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+}
+.content .filter select {
+  padding: 5px;
+  border: 1px solid rgb(178, 178, 178);
+  width: 150px;
+  margin-right: 10px;
+}
+.filter_sort {
+  text-align: center;
+}
+.filter_sort .form_checkBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter_sort .form_checkBox input {
+  margin-left: 5px;
+}
+.form_checkBox .form-group {
+  margin: 0 5px;
+}
+/* -------------------------end of filter------------------------- */
+/* -------------------------products------------------------- */
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products li {
+  width: calc(33% - 10px);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(139, 139, 139, 0.3);
+  margin-top: 30px;
+  background: #fff;
+  text-align: center;
+}
+.products li img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.products li p {
+  color: #333;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  text-align: right;
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.products li .product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.products li .product-price button {
+  background: rgb(32, 43, 73);
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+.products li .product-price .price {
+  color: rgb(37, 131, 49);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+/* -------------------------end of products------------------------- */
+
+/* -------------------------sidebar------------------------- */
+.sidebar .header_cards {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(212, 209, 252);
+  font-size: 1.3rem;
+}
+.sidebar .header_cards p {
+}
+.sidebar .empty-price {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(247, 184, 184);
+  font-size: 1.4rem;
+}
+.sidebar .empty-price .cart-item {
+  margin-top: 30px;
+}
+.sidebar .empty-pic {
+  width: 100%;
+}
+.sidebar .my-empty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-item .product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(5, 46, 51);
+  padding: 15px 0;
+}
+.cart-item .product-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.cart-item .product-item .product-detail {
+  display: flex;
+}
+.product-detail h2 {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.product-item .product-price {
+  font-size: 1.6rem;
+}
+.product-item .product-price .price {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.product-price .qty {
+  background-color: green;
+  color: white;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+.product-price .remove-item button {
+  background: crimson;
+  padding: 3px 10px;
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 15px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.sidebar .total-price {
+  background: rgb(232, 232, 255);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+/* -------------------------end of sidebar------------------------- */
